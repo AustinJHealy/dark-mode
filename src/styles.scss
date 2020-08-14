@@ -146,6 +146,7 @@ h1 {
 
 h2 {
   font-size: 1.8rem;
+  color: red;
 }
 
 h4 {
@@ -242,6 +243,11 @@ text-align: left;
   width: 50px;
 }
 
+.about-link {
+  font-size: large;
+  font-weight: bold;
+  color: red
+}
 .dark-mode {
   color: #fff;
   background-color: #313843;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useDarkMode } from '../hooks/useDarkMode';
-
+import { Link } from 'react-router-dom';
 const Navbar = () => {
   const [darkMode, setDarkMode] = useDarkMode(false);
   const toggleMode = e => {
@@ -16,6 +16,11 @@ const Navbar = () => {
           className={darkMode ? 'toggle toggled' : 'toggle'}
         />
       </div>
+      <Link to='/about'>
+      <div className="about-link">
+        <p>LEARN MORE ABOUT CRYPTOCURRENCY</p>
+        </div>
+    </Link>
     </nav>
   );
 };
